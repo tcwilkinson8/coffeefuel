@@ -2,15 +2,17 @@
 
 import firebaseApp from './firebase/firebaseConfig'; // ✅ Move this to the top
 
-// App.js
-const App = () => {
-    return (
-      <div style={{ backgroundColor: 'white', color: 'black', padding: '50px' }}>
-        <h1>Coffeefuel is brewing...</h1>
-      </div>
-    );
-  };
-  
-  export default App;
-  
+// src/App.js
+import React from 'react';
+import './App.css';
+import HomePage from './Views/HomePage';
+
+function App() {
+  return (
+    <div className="App">
+      <HomePage />
+    </div>
+  );
+}
+export default App;
 
