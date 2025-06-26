@@ -1,0 +1,81 @@
+/* HEADER STYLING */
+.coffee-header {
+    height: 100vh;
+    background: url('../assets/images/coffee_background_1.jpeg') center/cover no-repeat;
+
+    position: relative;
+    color: #fff;
+    font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  .overlay {
+    background: rgba(40, 25, 15, 0.6); /* Mocha tint overlay */
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    color: #f0e7dc;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .hero-content {
+    max-width: 600px;
+    margin-top: auto;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: #e4d5c7;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    background: #6b4226;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+  }
+  
+  .cta-button:hover {
+    background: #8c5a38;
+  }
+  .menu-container {
+    margin-top: -4rem; /* You can tweak this based on visual balance */
+    padding-top: 2rem; /* Maintain breathing room for content */
+  }
+  
+  

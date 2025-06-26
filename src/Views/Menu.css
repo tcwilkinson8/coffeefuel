@@ -1,0 +1,84 @@
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.menu-item {
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.menu-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+
+.menu-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item h2 {
+  font-size: 1.4rem;
+  margin: 1rem;
+  color: #222;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  padding: 0 1rem 1.5rem;
+  color: #666;
+}
+
+.menu-item img {
+  border-radius: 12px 12px 0 0;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover img {
+  transform: scale(1.03);
+}
+
+.steam {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 60px;
+  background: radial-gradient(ellipse at center, rgba(255,255,255,0.6) 0%, transparent 70%);
+  animation: steam-rise 3s ease-in-out infinite;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.8;
+  filter: blur(4px);
+}
+
+@keyframes steam-rise {
+  0% {
+    transform: translateX(-50%) translateY(0);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateX(-50%) translateY(-10px);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0;
+  }
+}
+
+.menu-item {
+  position: relative; /* Needed so steam can position over image */
+  overflow: hidden;
+}
